@@ -4,5 +4,85 @@
     margin: 0
     padding: 0
 body
-    font-family: "Red Hat Text",sans-serif
+    font-family: "Red Hat Text", sans-serif
     min-height: 100vh
+    background:$Very-dark-blue
+    background-image: url("../images/bg-stars.svg")
+    main
+        height: 100vh
+        width: 90%
+        margin: auto
+        display: flex
+        flex-direction: column
+        justify-content: space-evenly
+        text-align: center
+        p
+            color: $White
+            font-weight: bold
+            letter-spacing: 2px
+        .time
+            display: flex
+            gap: 5%
+            &::before
+                    
+                        content: ""
+                        background:$Very-dark-blue
+                        position: absolute
+                        background-image: url("../images/pattern-hills.svg")
+                        width: 100%
+                        height: 100px
+                        background-size: cover
+                        background-repeat: no-repeat
+                        left: 0
+                        bottom: 0
+            & > div
+                 width: 25%
+                 height: 120px
+                 position: relative
+                 &::after
+                        content: ""
+                        width:100%
+                        height: 0.6px
+                        background:$Very-dark-blue
+                        position: absolute
+                        top: 50%
+                        left: 0
+                 span
+                     display: inherit
+                     width: 100%
+                     height: 100%
+                     color: $Soft-red
+                     background-color: $Dark-desaturated-blue
+                     border-radius: 4px
+                     display: flex
+                     justify-content: center
+                     align-items: center
+                     font-weight: bold
+                     font-size: 45px
+                     position: relative
+                     &::before,
+                     &::after
+                        content: ""
+                        width: 25px
+                        height: 25px
+                        border-radius: 50%
+                        background: $Very-dark-blue
+                        position: absolute
+                     &::before
+                        left: -15px
+                     &::after
+                        right: -15px
+                 p
+                    position: absolute
+                    color: $Grayish-blue
+                    left: 50%
+                    transform: translateX(-50%)
+                    margin-top: 10px
+
+        .so_mide
+                svg
+                    margin-left: 15px
+                    cursor: pointer
+                    &:hover
+                        path
+                            fill: $Soft-red
